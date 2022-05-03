@@ -1,1 +1,1 @@
-gunicorn manage:app
+gunicorn run:app
