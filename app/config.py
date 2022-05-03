@@ -1,7 +1,7 @@
 from flask import Config
 
 import os
-class config:
+class Config:
     '''holds base urls'''
    
     SOURCE_BASE_URL = "https://newsapi.org/v2/top-headlines/sources?apiKey={}"
