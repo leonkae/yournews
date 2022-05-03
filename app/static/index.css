@@ -9,8 +9,6 @@ html {
   text-align: center;
   margin-bottom: 15px;
   background-color: rgb(146, 146, 146);
-  
-
 }
 .container {
   background-color: rgb(146, 146, 146);
@@ -42,12 +40,11 @@ html {
   background-color: rgb(201, 2, 2);
   
 } */
-.sticky{
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-
 
 .brand h1 {
   text-align: center;
@@ -107,6 +104,16 @@ html {
 .source-wrapper h1 {
   text-align: center;
 }
+.source-wrapper a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.source-wrapper a:hover {
+  border-bottom: 1.5px solid black;
+  color: dodgerblue;
+}
+
 .source-title {
   font-weight: 100;
   text-align: center;
@@ -118,13 +125,13 @@ html {
   color: wheat;
 }
 
-.footer{
+.footer {
   background-color: black;
   color: wheat;
   height: 180px;
   text-align: center;
 }
-.footer h6{
+.footer h6 {
   font-family: "Grand Hotel", cursive;
   font-size: 30px;
 }
