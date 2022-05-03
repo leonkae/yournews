@@ -1,0 +1,29 @@
+{% macro displayArticleList(articles) %} {%for article in articles%}
+<!-- <li>{{article.title}}</li>
+<li>{{article.author}}</li>
+<li>{{article.description}}</li>
+<li>
+  <img
+    style="height: 200px; width: 200px"
+    src="{{article.urlToImage}}"
+    alt="poster img"
+  />
+</li>
+<li>{{article.content}}</li>
+<li><a href="{{article.url}}">more info</a></li> -->
+
+<div class="news-wrapper">
+  {%for article in articles%}
+  <div class="content-wrapper">
+    <h1>{{article.title}}</h1>
+    <h3>{{article.author}}</h3>
+    <p>{{article.description}}</p>
+    <p>{{article.content}}</p>
+    <img class="image" src="{{article.urlToImage}}" alt="poster img" />
+    <a href="{{article.url}}">let's get you informed</a>
+  </div>
+
+  {%endfor%}
+</div>
+
+{%endfor%} {%endmacro%}

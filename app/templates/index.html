@@ -1,0 +1,91 @@
+{%import 'macros.html' as macro%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourNews</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Monoton&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Rock+Salt&family=Tinos:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Grand+Hotel&family=Monoton&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Rock+Salt&family=Tinos:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand">
+        <h1>YourNews</h1>
+      </div>
+
+      <div class="navbar" id="navbar">
+        <a href="/business">business</a>
+        <a href="/tech">tech</a>
+        <a href="/sports">SPORTS</a>
+        <a href="/entertainment">entertainment</a>
+        <a href="#sources">SOURCES</a>
+
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+
+      <div class="news-wrapper">
+        {%for article in articles%}
+        <div class="content-wrapper">
+          <h1>{{article.title}}</h1>
+          <h3>{{article.author}}</h3>
+          <p>{{article.description}}</p>
+          <p>{{article.content}}</p>
+          <img class="image" src="{{article.urlToImage}}" alt="poster img" />
+          <a href="{{article.url}}">let's get you informed</a>
+        </div>
+
+        {%endfor%}
+      </div>
+
+      <div class="source-title">
+        <h2>SOURCES</h2>
+      </div>
+
+      <div class="source-wrapper" id="sources">
+        {%for source in sources%} {{source.name}}
+        <ol>
+          {{source.url}}
+        </ol>
+        {%endfor%}
+      </div>
+    </div>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      let navbar = document.getElementById("navbar");
+      let sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <div class="footer">
+      <div class="brand">
+        <h6>copyright2022</h6>
+        <h1>YourNews</h1>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technology</title>
+    <link rel="stylesheet" href="{{url_for('static',filename ='tech.css')}}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Monoton&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Rock+Salt&family=Tinos:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Grand+Hotel&family=Monoton&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Rock+Salt&family=Tinos:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <button class="back-btn">
+        <a href="/"> << back </a>
+      </button>
+
+      <div class="brand">
+        <h1>TECH</h1>
+      </div>
+
+      <span class="line"></span>
+      <span class="line"></span>
+
+      <div class="news-wrapper">
+        {%for article in articles%}
+        <div class="content-wrapper">
+          <h1>{{article.title}}</h1>
+          <h3>{{article.author}}</h3>
+          <p>{{article.description}}</p>
+          <p>{{article.content}}</p>
+          <img class="image" src="{{article.urlToImage}}" alt="poster img" />
+          <a href="{{article.url}}">let's get you informed</a>
+        </div>
+
+        {%endfor%}
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <h6>copyright2022</h6>
+          <h1 style="color: wheat">YourNews</h1>
+        </div>
+      </div>
+      <!-- {%for article in articles%}
+      <li>{{article.title}}</li>
+      <li>{{article.author}}</li>
+      <li>{{article.description}}</li>
+      <li>
+        <img
+          style="height: 200px; width: 200px"
+          src="{{article.urlToImage}}"
+          alt="poster img"
+        />
+      </li>
+      <li>{{article.content}}</li>
+      <li><a href="{{article.url}}">more info</a></li>
+
+      {%endfor%} -->
+    </div>
+  </body>
+</html>
