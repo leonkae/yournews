@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: rgb(146, 146, 146);
+  
+
+}
+.container {
+  background-color: rgb(146, 146, 146);
+}
+
+.line {
+  border-bottom: 4px solid;
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  margin-top: 13px;
+}
+
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: x-large;
+  padding: 10px;
+  font-family: "Tinos", serif;
+  color: rgb(34, 34, 34);
+  font-size: 25px;
+}
+.navbar a:hover {
+  border-bottom: 1.5px solid black;
+  color: rgb(7, 7, 7);
+}
+/* .brand {
+  background-color: rgb(201, 2, 2);
+  
+} */
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.brand h1 {
+  text-align: center;
+  /* margin-top: 200px; */
+  font-size: 100px;
+  font-family: "Grand Hotel", cursive;
+  font-weight: normal;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border: solid;
+}
+
+.news-wrapper {
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 50px;
+}
+.content-wrapper {
+  margin: 30px;
+}
+.content-wrapper h1 {
+  text-decoration: underline;
+  font-size: xx-large;
+}
+.content-wrapper h3 {
+  font-size: x-large;
+}
+.content-wrapper p {
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+}
+.content-wrapper a {
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  font-family: "Poppins", sans-serif;
+}
+.content-wrapper a:hover {
+  border-bottom: 1.5px solid dodgerblue;
+  color: dodgerblue;
+  cursor: pointer;
+}
+.source-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* margin: 10px; */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.616);
+  font-family: "Poppins", sans-serif;
+  color: wheat;
+}
+.source-wrapper h1 {
+  text-align: center;
+}
+.source-title {
+  font-weight: 100;
+  text-align: center;
+  font-family: "Grand Hotel", cursive;
+  text-transform: lowercase;
+  text-decoration: underline;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.616);
+  color: wheat;
+}
+
+.footer{
+  background-color: black;
+  color: wheat;
+  height: 180px;
+  text-align: center;
+}
+.footer h6{
+  font-family: "Grand Hotel", cursive;
+  font-size: 30px;
+}

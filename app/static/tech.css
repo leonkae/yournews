@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  background-color: rgb(146, 146, 146);
+}
+
+.back-btn{
+    color: black;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+.back-btn a{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.back-btn a:hover{
+    /* border-bottom: 1.5px solid black; */
+    color: dodgerblue;
+}
+
+.line {
+  border-bottom: 4px solid;
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  margin-top: 13px;
+}
+
+.brand{
+    font-family: 'Grand Hotel', cursive;
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    margin: 30px;
+    color: black;
+    
+}
+.image {
+  width: 200px;
+  height: 200px;
+  border: solid;
+}
+
+.news-wrapper {
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 50px;
+}
+.content-wrapper {
+  margin: 30px;
+}
+.content-wrapper h1 {
+  text-decoration: underline;
+  font-size: xx-large;
+}
+.content-wrapper h3 {
+  font-size: x-large;
+}
+.content-wrapper p {
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+}
+.content-wrapper a {
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  font-family: "Poppins", sans-serif;
+}
+.content-wrapper a:hover {
+  border-bottom: 1.5px solid dodgerblue;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.footer{
+  background-color: black;
+  color: wheat;
+  height: 180px;
+  text-align: center;
+}
+.footer h6{
+  font-family: "Grand Hotel", cursive;
+  font-size: 30px;
+  color: wheat;
+}
