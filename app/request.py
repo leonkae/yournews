@@ -2,14 +2,14 @@
 import urllib.request,json
 from app import app
 from instance.config import NEWS_API_KEY
-from app.config import config
+from app.config import Config
 from .models.article import Article
 from .models.source import Source
 
 
 api_key = NEWS_API_KEY
-base_url = config.NEWS_BASE_URL
-source_base_url = config.SOURCE_BASE_URL 
+base_url = Config.NEWS_BASE_URL
+source_base_url = Config.SOURCE_BASE_URL 
 
 def get_articles(category):
     '''gets articles'''

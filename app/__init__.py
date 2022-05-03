@@ -1,6 +1,5 @@
 from flask import Flask
 
-from app.config import config
 from .config import DevConfig
 
 app = Flask(__name__, instance_relative_config= True)
