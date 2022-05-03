@@ -1,13 +1,13 @@
 # from turtle import title
 import urllib.request,json
-from app import app
-from instance.config import NEWS_API_KEY
+# from app import app
+# from instance.config import NEWS_API_KEY
 from app.config import Config
 from .models.article import Article
 from .models.source import Source
 
 
-api_key = NEWS_API_KEY
+api_key = Config.NEWS_API_KEY
 base_url = Config.NEWS_BASE_URL
 source_base_url = Config.SOURCE_BASE_URL 
 
