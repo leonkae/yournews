@@ -60,8 +60,10 @@
         {%for source in sources%} 
         {{source.name}}
         <ol>
-          {{source.url}}
+        <a href=" {{source.url}}"> {{source.url}}</a>
+          <!-- {{source.url}} -->
         </ol>
+
         {%endfor%}
       </div>
     </div>
