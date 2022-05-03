@@ -19,12 +19,12 @@ def business():
     articles = get_articles('business')
     return render_template('business.html',info=info,articles=articles)
 
-@app.route ('/article/<id>')
-def article(id):
-    '''route for articles'''
-    info = "hello world ....twende!"
-    id = id
-    return render_template('article.html',info=info, id=id)
+# @app.route ('/article/<id>')
+# def article(id):
+#     '''route for articles'''
+#     info = "hello world ....twende!"
+#     id = id
+#     return render_template('article.html',info=info, id=id)
 
 @app.route ('/sports')
 def sports():
