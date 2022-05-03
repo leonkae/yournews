@@ -12,6 +12,7 @@ base_url = config.NEWS_BASE_URL
 source_base_url = config.SOURCE_BASE_URL 
 
 def get_articles(category):
+    '''gets articles'''
     get_url = base_url.format(category,api_key)
     print (get_url)
     # get_url = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=444f55e941ed44459db54db9932d8905'
@@ -31,6 +32,7 @@ def get_articles(category):
             
 def process_results(article_result_list):
     article_result = []
+    '''processes results'''
     for item in article_result_list:
         author = item.get('author')
         title = item.get('title')
@@ -46,6 +48,7 @@ def process_results(article_result_list):
 
 
 def get_source():
+    '''gets sources'''
     get_url = source_base_url.format(api_key)
     print (get_url)
     
@@ -61,6 +64,7 @@ def get_source():
             return source_result
         
 def process_result(source_result_list):
+    '''processes sources'''
     source_result = []
     for item in source_result_list:
         name = item.get('name')
